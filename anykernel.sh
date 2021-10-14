@@ -48,9 +48,18 @@ case "$ZIPFILE" in
     ui_print "  • Setting 80 Hz refresh rate"
     patch_cmdline "msm_drm.framerate_override" "msm_drm.framerate_override=5"
     ;;
+    *OSSFOD*|*OSS*)
+    ui_print "  • Setting OSS FOD"
+    patch_cmdline "msm_drm.oss_fod" "msm_drm.oss_fod=1"
+    ;;
+  *DFFOD*|*OLDFOD*)
+    ui_print "  • Setting DisplayFeature FOD"
+    patch_cmdline "msm_drm.oss_fod" "msm_drm.oss_fod=0"
+    ;;
   *)
     ui_print "  • Setting 60 Hz refresh rate"
     patch_cmdline "msm_drm.framerate_override" ""
+    patch_cmdline "msm_drm.oss_fod" "msm_drm.oss_fod=0"
     ;;
 esac
 
