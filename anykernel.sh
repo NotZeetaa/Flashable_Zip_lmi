@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=neXus_kernel_lmi
+kernel.string=aRise_kernel_lmi
 do.devicecheck=1
 do.modules=0
 do.systemless=0
