@@ -4,14 +4,17 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=aRise_kernel_lmi
+kernel.string=SOVIET_BB_cepheus
 do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=lmi
-device.name2=lmipro
+device.name1=cepheus
+device.name2=Cepheus
+device.name3=cepheus-user
+device.name4=Mi 9
+device.name5=Mi9
 supported.versions=11 - 12
 '; } # end properties
 
